@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GEK - Green Eats Kitchen!</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-bg.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1 class="header_logo">
+        <img src="./assets/images/logo.png" width="60"  height="60" alt="">
+        <a href="#" class="logo">Green Eats Kitchen<span class="span">.</span></a>
+      </h1>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="nav-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#food-menu" class="navbar-link" data-nav-link>Shop</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="header-btn-group">
+        <button class="search-btn" aria-label="Search" data-search-btn>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+
+        <button class="btn btn-hover">Reservation</button>
+
+        <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
+          <span class="line top"></span>
+          <span class="line middle"></span>
+          <span class="line bottom"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <!-- 
+    - #SEARCH BOX
+  -->
+
+  <div class="search-container" data-search-container>
+
+    <div class="search-box">
+      <input type="search" name="search" aria-label="Search here" placeholder="Type keywords here..."
+        class="search-input">
+
+      <button class="search-submit" aria-label="Submit search" data-search-submit-btn>
+        <ion-icon name="search-outline"></ion-icon>
+      </button>
+    </div>
+
+    <button class="search-close-btn" aria-label="Cancel search" data-search-close-btn></button>
+
+  </div>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">"Nourishing You, Nurturing the Earth"</p>
+
+            <h2 class="h1 hero-title">Supper delicious organic foods!</h2>
+
+            <br><br>
+            <button class="btn" id="header_btn">Book A Table</button>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner-bg.png" width="820" height="716" alt="" aria-hidden="true"
+              class="w-100 hero-img-bg">
+
+            <img src="./assets/images/hero-banner.png" width="700" height="637" loading="lazy" alt="Burger"
+              class="w-100 hero-img">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PROMO
+      -->
+
+      <section class="section section-divider white promo">
+        <div class="container">
+
+          <ul class="promo-list has-scrollbar">
+
+            <li class="promo-item">
+              <div class="promo-card">
+
+                <div class="card-icon">
+                  <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="60px" height="60px" viewBox="0 0 122.88 122.88"><title>meal-food</title><path d="M61.44,0A61.46,61.46,0,1,1,18,18,61.21,61.21,0,0,1,61.44,0ZM52.55,58.42c2.92-2,4.39-4.61,4.14-10.58V32.49c0-2.14-3.92-2.4-4.11,0l-.15,12.45a1.75,1.75,0,1,1-3.5,0l.15-12.88c0-2.3-3.77-2.53-3.81,0,0,3.58-.15,9.31-.15,12.88a1.52,1.52,0,1,1-3,0l.15-12.79A2.09,2.09,0,0,0,39,30.61c-1.38.88-1.1,2.65-1.16,4.15l-.48,14.69c.07,4.27,1.19,7.74,4.54,9.22a8.37,8.37,0,0,0,2,.52L42.77,89.25a3.76,3.76,0,0,0,3.71,3.86h.46a4.24,4.24,0,0,0,4.17-4.34l-1-29.59a6.61,6.61,0,0,0,2.45-.76Zm18,29.75-.05-26.41c-11.29-6.52-7.69-31.64,3.6-31.5,13.72.16,15.35,28.31,3.55,31.4l.87,26.64c.17,6.13-8,6.7-8-.13ZM99.29,23.59A53.52,53.52,0,1,0,115,61.44,53.36,53.36,0,0,0,99.29,23.59Z"/></svg>   
+                 
+                </div>
+
+                <h3 class="h3 card-title">Breakfast</h3>
+
+                <p class="card-text">
+                  Breakfast is a love letter to your body.
+
+                </p>
+
+                <img src="./assets/images/promo-1.png" width="300" height="300" loading="lazy" alt="Maxican Pizza"
+                  class="w-100 card-banner">
+
+              </div>
+            </li>
+
+            <li class="promo-item">
+              <div class="promo-card">
+
+                <div class="card-icon">
+            
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none"
+                  xmlns:v="https://vecta.io/nano">
+                  <g clip-path="url(#A)" fill="#ff9d2d">
+                    <path
+                      d="M14.837 40.062c0 3.106 2.528 5.634 5.634 5.634s5.634-2.528 5.634-5.634a5.64 5.64 0 0 0-5.634-5.634c-3.106 0-5.634 2.527-5.634 5.634zm5.634-3.876a3.88 3.88 0 0 1 3.876 3.876 3.88 3.88 0 0 1-3.876 3.876 3.88 3.88 0 0 1-3.876-3.876 3.88 3.88 0 0 1 3.876-3.876zm4.22-20.523l-.2-9.292a1.6 1.6 0 0 0 1.089-1.514V1.599A1.6 1.6 0 0 0 23.981 0H16.96a1.6 1.6 0 0 0-1.599 1.599v3.259a1.6 1.6 0 0 0 1.09 1.514l-.201 9.292a10.3 10.3 0 0 1-2.194 6.117c-1.659 2.107-2.573 4.744-2.573 7.426v27.741A3.06 3.06 0 0 0 14.538 60h11.866a3.06 3.06 0 0 0 3.053-3.053v-27.74a12.06 12.06 0 0 0-2.573-7.426 10.3 10.3 0 0 1-2.194-6.117zM17.119 1.758h6.703v2.941h-6.703V1.758zm5.695 8.398h-4.687l.08-3.7h4.527l.08 3.7zM27.7 56.947a1.3 1.3 0 0 1-1.296 1.295H14.538c-.715 0-1.295-.581-1.295-1.295v-7.978H27.7v7.978zm0-25.703h-8.55a.88.88 0 0 0-.879.878.88.88 0 0 0 .879.879h8.55v14.21H13.242v-14.21h1.819a.88.88 0 0 0 .878-.879.88.88 0 0 0-.878-.878h-1.819v-2.037a10.29 10.29 0 0 1 2.196-6.338c1.602-2.034 2.514-4.579 2.57-7.167l.082-3.787h4.762l.081 3.787a12.08 12.08 0 0 0 2.57 7.167 10.29 10.29 0 0 1 2.196 6.338v2.037zm20.876-12.638c0-1.069-.567-2.026-1.438-2.519-.186-1.394-1.338-2.471-2.727-2.471a2.66 2.66 0 0 0-1.289.334 2.61 2.61 0 0 0-.274-.089c-.193-1.385-1.341-2.453-2.724-2.453-.896 0-1.721.456-2.23 1.188l-.226-.01c-1.262 0-2.34.894-2.658 2.119a2.8 2.8 0 0 0-1.113 1.131c-1.179.329-2.037 1.45-2.037 2.78.001.218.047.432.132.631l-.003.052v1.757a64.33 64.33 0 0 0 1.632 14.388l.141.613c1.294 5.63 1.871 9.946 1.871 13.995v4.586a.54.54 0 0 1-.038.201c-.004.008-.01.016-.013.024a.54.54 0 0 1-.196.23l-1.491.966c-.515.334-.822.899-.822 1.512v.625a1.71 1.71 0 0 0 .007.15c.002.026.005.051.008.077.001.007.001.014.002.022.002.015.005.028.008.043l.016.092a1.66 1.66 0 0 0 .034.133c.014.045.028.083.043.122.006.016.011.032.018.048a1.57 1.57 0 0 0 .055.119c.006.012.012.025.018.038a1.67 1.67 0 0 0 .07.119c.006.01.012.021.018.03.025.038.052.073.079.109.009.01.016.022.025.032.025.031.051.059.078.088.013.015.026.029.039.043a1.42 1.42 0 0 0 .07.065c.024.021.04.038.06.055s.037.028.055.042a1.37 1.37 0 0 0 .086.064c.015.01.031.019.046.028.03.019.059.039.091.056a2.17 2.17 0 0 0 .105.054c.023.011.045.022.066.031a1.83 1.83 0 0 0 .08.031 1.92 1.92 0 0 0 .088.031 1.73 1.73 0 0 0 .086.023c.029.008.059.016.085.021a1.58 1.58 0 0 0 .103.017 1.43 1.43 0 0 0 .076.011 1.94 1.94 0 0 0 .101.006 1.18 1.18 0 0 0 .08.003L45.561 60c.031-.001.058-.001.087-.003s.059-.003.088-.006a1.07 1.07 0 0 0 .087-.011c.034-.005.068-.01.098-.016h0c.035-.008.058-.013.078-.019.032-.008.065-.016.098-.027.02-.006.039-.013.059-.021a1.38 1.38 0 0 0 .103-.039c.015-.006.031-.013.045-.02s.026-.014.04-.021a2.01 2.01 0 0 0 .105-.054c.023-.013.046-.027.069-.042a1.93 1.93 0 0 0 .081-.054 1.46 1.46 0 0 0 .075-.056 2.01 2.01 0 0 0 .064-.053 1.78 1.78 0 0 0 .076-.069c.018-.017.035-.036.052-.054.024-.026.049-.052.071-.079.016-.019.031-.039.047-.059.021-.028.043-.054.062-.083s.033-.052.049-.079.031-.049.045-.074a1.77 1.77 0 0 0 .144-.342 1.62 1.62 0 0 0 .036-.14c.006-.029.011-.059.016-.089.002-.016.006-.031.008-.047l.003-.022.008-.075a1.68 1.68 0 0 0 .008-.15v-.624c0-.613-.307-1.178-.821-1.511l-.553-.358-.94-.609c-.035-.027-.083-.076-.132-.151a1.28 1.28 0 0 1-.047-.084c-.041-.081-.069-.163-.069-.22v-4.585c0-4.048.577-8.364 1.871-13.995l.141-.613a64.33 64.33 0 0 0 1.632-14.388V19.3c0-.018-.002-.035-.003-.052a1.63 1.63 0 0 0 .132-.626v-.016zm-14.012-1.108a.88.88 0 0 0 .792-.617c.108-.352.366-.618.688-.712a.88.88 0 0 0 .63-.79c.035-.58.471-1.033.993-1.033a.9.9 0 0 1 .35.071.88.88 0 0 0 1.174-.527c.145-.425.528-.722.932-.722.549 0 .995.498.995 1.109a1.23 1.23 0 0 1-.021.226.88.88 0 0 0 .968 1.036c.222-.026.438.029.625.159a.88.88 0 0 0 1.095-.073c.178-.163.395-.249.626-.249.549 0 .996.498.996 1.109a1.16 1.16 0 0 1-.005.114.88.88 0 0 0 .65.93c.219.058.408.198.544.386h-12.76c.173-.239.432-.398.728-.414h0zm10.634 39.787l.388.251c.006.004.011.01.015.016l.005.021v.619l-.001.013c-.003.011-.006.016-.009.02l-.052.017H34.892l-.02-.001-.022-.006c-.011-.008-.016-.017-.019-.031l-.001-.63c0-.015.007-.029.02-.037l1.491-.967a2.52 2.52 0 0 0 .135-.095l.023-.018a2.11 2.11 0 0 0 .111-.092c.097-.087.176-.168.248-.254h6.737a3.35 3.35 0 0 0 .102.118l.034.037c.026.026.051.052.078.077.013.013.027.025.041.038a1.97 1.97 0 0 0 .081.07l.039.032a1.81 1.81 0 0 0 .114.081l1.113.722zm1.491-36.227l-.018 1.463h-7.669a.88.88 0 0 0-.879.879.88.88 0 0 0 .879.879h7.603a62.7 62.7 0 0 1-1.502 10.774l-.141.613c-1.325 5.765-1.915 10.202-1.915 14.388v4.299H37.39v-4.299c0-4.187-.591-8.624-1.915-14.388l-.141-.613a62.6 62.6 0 0 1-1.503-10.774h1.08a.88.88 0 0 0 .879-.879.88.88 0 0 0-.879-.879h-1.146l-.019-1.463v-1.387h12.942v1.387z" />
+                  </g>
+                  <defs>
+                    <clipPath id="A">
+                      <path fill="#fff" d="M0 0h60v60H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                </div>
+
+                <h3 class="h3 card-title">Soft Drinks</h3>
+
+                <p class="card-text">
+                  Savoring the moment, one sip at a time.
+
+                </p>
+
+                <img src="./assets/images/healthy-detox-beet-smoothie-perfect-for-healthy-drink-catalog-ai-generated-png.webp" width="300" height="300" loading="lazy" alt="Soft Drinks"
+                class="w-100 card-banner">
+
+              </div>
+            </li>
+
+            <li class="promo-item">
+              <div class="promo-card">
+
+                <div class="card-icon">
+                  <?xml version="1.0" encoding="iso-8859-1"?>
+                  <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                  <svg fill="#FF9D2C" height="60px" width="60px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                     viewBox="0 0 512 512" xml:space="preserve">
+                  <g>
+                    <g>
+                      <path d="M503.807,279.708c-9.99-22.07-27.854-38.578-50.299-46.481c-23.676-8.337-53.319-5.705-79.305,7.038
+                        c-4.989,2.446-10.254,3.977-15.503,4.848c-1.538-11.984,0.849-23.12,7.151-33.229c2.017-3.237,4.228-6.032,6.339-8.363
+                        c5.134-5.669,5.928-14.033,1.836-20.496c-5.992-9.463-19.336-10.583-26.857-2.285c-3.009,3.32-6.12,7.22-9.044,11.702
+                        c-7.549,11.575-14.847,28.691-13.597,50.58c-3.259-0.909-5.838-1.881-7.471-2.701c-14.131-7.094-29.466-11.082-44.403-11.836
+                        c-8.104-16.665-12.365-34.989-12.365-53.541c0-19.896-6.307-38.798-18.241-54.662c-11.527-15.326-27.934-26.834-46.201-32.405
+                        c-0.636-0.194-1.284-0.351-1.94-0.468c-0.262-0.047-0.522-0.086-0.783-0.131c5.608-13.855,16.743-33.644,38.371-51.603
+                        c6.984-5.799,8.677-16.084,3.297-23.396c-5.802-7.888-16.947-9.196-24.401-3.052c-13.976,11.518-24.529,23.79-32.485,35.476
+                        C169.822,14.75,131.393-2.423,88.133,5.352C57.522,10.849,24.12,41.349,6.932,59.042C1.437,64.699-1.01,72.709,0.384,80.469
+                        c1.394,7.762,6.478,14.42,13.596,17.81c19.287,9.186,53.321,23.147,81.982,23.146c0.548,0,1.088-0.021,1.632-0.032
+                        c-12.318,15.519-19.35,34.562-19.35,53.551c0,28.603-10.112,56.481-28.473,78.501c-23.233,27.861-36.028,63.213-36.028,99.544
+                        c0,85.756,69.768,155.525,155.524,155.525c31.515,0,62.193-9.598,87.965-27.277c29.754,29.55,56.703,30.331,75.766,24.205
+                        c4.56-1.466,8.758-3.851,12.575-7.139c3.82,3.288,8.016,5.673,12.577,7.139c5.732,1.843,12.174,3.061,19.195,3.061
+                        c23.05-0.001,52.304-13.143,82.863-60.488c21.028-32.578,36.818-71.725,46.362-98.829
+                        C514.663,326.2,513.682,301.525,503.807,279.708z M40.711,73.226c20.64-19.499,40.106-32.188,53.402-34.577
+                        c26.907-4.832,49.301,4.337,51.353,15.762c0.893,4.972-2.138,11.114-8.316,16.849c-8.172,7.587-20.69,13.344-34.342,15.797
+                        C89.51,89.446,66.843,84.324,40.711,73.226z M169.263,474.682c-67.099,0.001-121.69-54.591-121.69-121.693
+                        c0-28.427,10.008-56.085,28.18-77.877c23.422-28.088,36.321-63.661,36.321-100.167c0-15.072,7.619-30.44,20.378-41.109
+                        c10.273-8.59,23.019-13.435,36.981-14.272c0.541,0.051,1.081,0.086,1.615,0.086c0.917,0,1.818-0.086,2.702-0.23
+                        c0.018,0,0.036-0.001,0.055-0.001c4.281,0,8.664,0.369,13.108,1.114c23.695,7.661,39.543,29.404,39.543,54.413
+                        c0,19.991,3.861,39.775,11.283,58.246c-0.034,0.012-0.069,0.024-0.103,0.036c-1.403,0.494-2.788,1.022-4.154,1.582
+                        c-20.494,8.407-36.779,24.207-46.144,44.9c-9.876,21.817-10.858,46.491-2.763,69.477c9.544,27.103,25.334,66.25,46.362,98.829
+                        c1.563,2.421,3.122,4.743,4.678,6.988C215.976,467.776,192.92,474.682,169.263,474.682z M474.658,337.95
+                        c-25.906,73.569-67.403,147.743-106.156,135.284c-0.815-0.262-3.9-2.865-7.275-11.11c-2.603-6.356-8.788-10.507-15.656-10.507
+                        c-6.868,0-13.052,4.152-15.654,10.508c-3.374,8.244-6.461,10.846-7.274,11.109c-16.321,5.244-33.13-4.878-49.055-23.846
+                        c-0.371-0.589-0.768-1.166-1.22-1.719c-24.585-30.025-43.633-75.938-53.84-104.016c-0.124-0.343-0.248-0.685-0.372-1.027
+                        c-0.209-0.579-0.416-1.153-0.618-1.715c-0.353-0.987-0.705-1.975-1.052-2.961c-5.185-14.724-4.59-30.452,1.672-44.289
+                        c1.922-4.245,4.308-8.152,7.097-11.666c2.101-2.646,4.438-5.058,6.969-7.231c0.332-0.284,0.667-0.564,1.004-0.839
+                        c3.256-2.657,6.819-4.925,10.655-6.736c1.617-0.763,3.281-1.448,4.988-2.049c1.045-0.368,2.122-0.696,3.22-0.996
+                        c0.325-0.089,0.659-0.161,0.987-0.244c0.786-0.198,1.579-0.387,2.388-0.55c0.391-0.079,0.787-0.148,1.182-0.218
+                        c0.781-0.14,1.57-0.267,2.37-0.376c0.399-0.054,0.798-0.106,1.201-0.152c0.849-0.097,1.711-0.174,2.58-0.237
+                        c12.573-0.902,26.576,1.915,39.077,8.193c9.137,4.587,24.793,8.881,42.351,9.258c0.444,0.035,0.891,0.054,1.34,0.054
+                        c0.204,0,0.41-0.017,0.616-0.025c13.979,0.064,29.039-2.402,42.914-9.205c17.738-8.697,38.113-10.805,53.172-5.503
+                        c13.656,4.81,24.565,14.939,30.713,28.522C479.25,307.496,479.843,323.225,474.658,337.95z"/>
+                    </g>
+                  </g>
+                  </svg>
+                </div>
+
+                <h3 class="h3 card-title">Fruits</h3>
+
+                <p class="card-text">
+                  Salads are the real definition of 'eat the rainbow'.
+
+                </p>
+
+              
+                <img src="./assets/images/pngtree-fresh-fruit-png-image_6642661.png" width="300" height="300" loading="lazy" alt="Burger Kingo"
+                class="w-100 card-banner">
+
+
+              </div>
+            </li>
+
+            <li class="promo-item">
+              <div class="promo-card">
+
+                <div class="card-icon">
+                  <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg fill="#FF9D2C" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="60px" height="60px" viewBox="0 0 190.399 190.4"
+	 xml:space="preserve">
+<g>
+	<path d="M189.051,69.999c-4.793-2.396-10.221-3.628-15.423-3.096c1.631-4.199,2.11-9.336-1.101-12.223
+		c-4.635-4.166-10.576-2.31-15.666,0.172c-1.871-3.545-3.901-7.264-4.593-11.098c-0.429-2.381-3.671-2.375-4.794-0.627
+		c-1.971,3.068-4.648,5.351-7.328,7.694c-3.236-4.242-8.143-9.281-13.479-6.931c-0.565,0.249-1.064,0.547-1.533,0.867
+		c-6.385-9.105-15.091-8.678-22.95-0.431c-8.801-12.77-21.632-15.007-30.888-1.415c-11.187-7.921-23.561-6.018-21.038,9.471
+		c-6.565,0.306-11.821,6.743-15.005,12.018c-3.617-3.888-9.095-8.17-14.089-6.516c-5.445,1.803-6.987,7.147-7.058,12.357
+		c-3.876-0.402-8.019-0.389-11.484-1.843c-1.276-0.535-2.607,0.784-2.618,1.994c-0.04,4.356,0.099,8.899,2.931,12.419
+		c1.523,1.893,4.244,2.434,6.848,2.744c-0.696,0.706-1.31,1.497-1.781,2.407c-2.321,4.487-0.62,9.628,1.957,13.585
+		c1.695,2.602,5.869,0.199,4.18-2.443c-2.848-4.454-3.572-11.329,3.282-12.125c2.558-0.297,4.888,0.628,6.603,2.519
+		c2.567,2.83,2.05,7.253,1.639,10.724c-5.058,0.227-9.866,1.131-14.166,3.153c-0.197,0.092-0.263,0.248-0.353,0.392
+		c-0.5-0.793-1.02-1.556-1.507-2.367c-1.123-1.873-3.686-0.567-3.345,1.41c6.655,38.529,53.031,53.852,86.842,53.906
+		c38.241,0.062,79.034-19.632,92.26-57.357c1.278-3.645-2.716-5.568-5.463-4.24c-0.824-0.592-1.941-0.909-3.339-0.715
+		c-1.755,0.244-3.502,0.518-5.251,0.784c4.302-8.373,9.43-15.156,17.707-20.409C190.697,73.731,190.994,70.97,189.051,69.999z
+		 M70.196,48.166c1.163,1.068,2.981,0.888,3.819-0.492c7.045-11.597,19.406-8.797,25.69,2.02c1.025,1.763,3.195,1.422,4.285,0
+		c8.692-5.69,14.707-6.098,18.119-1.372c-2.027,4.28-1.178,10.188-0.048,14.567c0.173,0.667,0.571,1.027,1.031,1.187
+		c-1.112,0.977-2.196,2.081-3.192,3.447c-1.461-2.501-2.914-5.052-3.656-7.777c-0.451-1.659-2.998-2.652-4.201-1.11
+		c-3.518,4.511-7.797,7.632-10.762,12.315c-3.744-3.317-9.042-7.324-13.684-5.256c-6.121,2.728-4.437,9.828-2.853,14.987
+		c0.455,1.483,2.518,0.848,2.277-0.628c-2.21-5.297-0.141-8.519,6.209-9.666c2.645,1.489,5.007,3.33,7.085,5.524
+		c0.957,0.894,2.764,0.86,3.4-0.438c2.055-4.189,5.863-7.124,9.193-10.382c1.385,2.943,3.213,5.717,4.754,8.546
+		c0.863,1.586,3.438,1.647,4.285,0c2.457-4.781,5.617-9.139,11.478-9.441c7.798-0.403,7.06,9.789,6.103,14.715
+		c-16.307-6.443-42.189,3.895-35.488,26.673c-0.725,0.065-1.454,0.097-2.18,0.155c-4.783-9.401-11.177-21.812-19.871-23.812
+		c1.447-5.217,0.669-11.301-2.156-15.68c-3.719-5.766-10.789-5.166-16.468-3.058c-1.923-5.09-4.726-9.524-10.188-10.614
+		C53.341,43.062,63.693,42.191,70.196,48.166z M51.77,102.945c-7.052-1.281-14.369-2.526-21.371-2.743
+		c0.566-3.812,0.048-7.922-1.575-11.258c0.027-0.033,0.035-0.083,0.061-0.117c6.329-2.991,12.784-4.555,19.758-2.849
+		c4.078,0.998,7.017,3.415,9.627,6.275c-3.273,2.005-5.749,5.142-6.592,9.438C51.587,102.163,51.65,102.571,51.77,102.945z
+		 M29.468,86.653c2.197-8.401,11.699-8.623,19.072-6.866c6.745,1.607,12,5.203,16.403,10.058c-0.857,0.138-1.695,0.339-2.516,0.583
+		C54.599,80.503,40.51,80.912,29.468,86.653z M56.233,102.948c0.92-3.244,2.71-5.418,5.392-6.71
+		c0.358,0.443,0.716,0.886,1.077,1.326c1.358,1.653,3.471-0.451,2.735-2.109c-0.047-0.105-0.107-0.194-0.155-0.298
+		c2.761-0.418,5.453,0.125,8.145,0.675c2.428,3.426,4.633,7.016,6.939,10.534c-3.694-0.101-7.4-0.278-11.132-0.638
+		c-4.149-0.401-8.674-1.187-13.373-2.041C56.008,103.472,56.148,103.247,56.233,102.948z M77.747,96.505
+		c0.052,0.004,0.103,0.014,0.155,0.018c2.253,0.144,2.867-2.995,1.103-4.07c-1.594-0.972-3.345-1.677-5.156-2.164
+		c-0.418-0.573-0.783-1.174-1.237-1.727c1.209-0.98,2.364-1.631,3.496-2.132c-0.101,1.912,2.414,2.083,3.349,0.836
+		c0.385-0.512,0.692-1.081,1.008-1.643c3.328,0.301,6.362,2.694,9.23,6.848c2.944,4.263,5.103,8.995,7.458,13.607
+		c-4.814,0.289-9.655,0.395-14.52,0.324C80.994,103.085,79.47,99.736,77.747,96.505z M17.039,82.199
+		c-0.856,0.082-1.694,0.274-2.51,0.526c-0.011-0.003-0.017-0.011-0.028-0.014c-2.173-0.631-4.394-1.084-6.551-1.768
+		c-3.276-1.039-3.663-4.737-3.748-7.983c3.762,0.515,7.552-0.044,11.338,1.249c1.274,0.435,2.255-0.685,2.39-1.82
+		c0.466-3.94,0.897-11.223,6.632-10.125c4.073,0.78,7.263,4.781,9.995,7.574c1.843,1.884,4.298-0.735,2.958-2.73
+		c6.572-9.886,18.813-16.103,22.096-0.065c0.242,1.184,1.803,2.155,2.969,1.685c5.964-2.405,12.462-3.758,14.78,3.944
+		c0.931,3.092,0.202,6.221-0.488,9.323c-2.492,0.614-5.146,2.089-7.979,4.689c-10.865-12.37-40.489-20.045-41.954-0.63
+		C24.686,83.399,21.4,81.781,17.039,82.199z M175.535,102.71c-15.037,30.982-48.81,45.176-82.397,46.057
+		c-35.48,0.932-62.436-14.938-80.989-43.428c0.068-0.002,0.122,0.046,0.193,0.03c8-1.853,20.189,2.116,27.991,3.342
+		c10.804,1.696,21.592,3.47,32.456,4.741C107.629,117.529,141.359,107.523,175.535,102.71z M123.119,89.348
+		c7.214-0.813,12.568,5.316,14.649,11.524c-7.616,1.312-15.228,2.539-22.866,3.51c0.01-0.116,0.022-0.231,0-0.364
+		C113.768,97.595,115.632,90.191,123.119,89.348z M165.053,95.603c-0.072,0.201-0.057,0.385-0.077,0.576
+		c-7.757,1.264-15.473,2.651-23.176,4c-0.017-0.136,0.002-0.259-0.046-0.404c-2.735-8.488-10.316-16.332-20.008-14.434
+		c-9.543,1.869-12.1,10.945-9.008,19.271c0.002,0.007,0.008,0.011,0.01,0.018c-1.854,0.223-3.706,0.458-5.564,0.646
+		c-2.828-12.055,4.159-20.846,15.996-23.372c12.055-2.573,20.825,4.051,24.48,15c0.746,2.233,4.317,1.952,4.232-0.573
+		c-0.232-6.921-3.344-11.869-7.877-15.035c0.038-0.098,0.104-0.161,0.131-0.27c4.389-16.75-8.175-25.142-18.627-18.756
+		c0.002-0.115,0.031-0.219,0.014-0.341c-0.467-3.128-0.797-6.24-0.125-9.245c1.554,0.171,3.242-1.511,2.347-3.396
+		c-0.131-0.277-0.274-0.511-0.408-0.776c3.46-3.198,9.659,6.194,10.304,7.148c0.926,1.37,2.596,1.564,3.838,0.495
+		c2.461-2.117,4.898-4.064,7.097-6.291c1.345,3.429,3.284,6.759,4.845,9.895c0.666,1.338,2.423,1.593,3.637,0.954
+		c2.323-1.223,10.254-5.98,12.057-1.147c0.908,2.435-0.266,5.729-0.905,8.625c-1.831,0.713-3.604,1.654-5.241,2.978
+		c-7.619,6.161-11.205,15.964-8.248,25.438c0.336,1.078,2.1,0.93,2.029-0.274c-0.895-15.119,10.758-27.43,25.091-23.278
+		C174.217,78.84,168.35,86.392,165.053,95.603z"/>
+</g>
+</svg>
+                </div>
+
+                <h3 class="h3 card-title">Salads</h3>
+
+                <p class="card-text">
+                  Good Fruits is the foundation of genuine happiness.
+
+                </p>
+                <img src="./assets/images/Salad-Free-Download-PNG.png" width="300" height="300" loading="lazy" alt="French Fry"
+                class="w-100 card-banner">
+                
+              </div>
+            </li>
+
+            <li class="promo-item">
+              <div class="promo-card">
+
+                <div class="card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none"
+                    xmlns:v="https://vecta.io/nano">
+                    <g clip-path="url(#A)">
+                      <path
+                        d="M57.492 40.5h-9.248l1.652-.602c3.539-1.415 5.333-3.077 5.333-4.942 0-2.867-2.322-3.83-4.371-4.679-.878-.364-1.785-.741-2.529-1.252a.88.88 0 0 0-1.222.226.88.88 0 0 0 .226 1.222c.895.616 1.89 1.029 2.851 1.427 2.099.87 3.287 1.441 3.287 3.055 0 1.029-1.541 2.236-4.228 3.31-3.219 1.287-6.956 1.984-8.485 2.234H37.88c1.972-1.538 3.369-3.644 4.263-6.432 1.088-3.393 2.64-5.885 5.033-8.08.664-.609.959-1.469.856-2.286l5.013-3.729c.136-.101.324-.105.467-.009 1.086.729 2.203.929 3.23.577.81-.277 1.444-.858 1.787-1.635.356-.807.352-1.749-.011-2.585-.476-1.096-1.488-1.842-2.643-1.976.218-1.142-.191-2.332-1.094-3.114-.689-.597-1.587-.883-2.463-.785a2.99 2.99 0 0 0-2.095 1.216c-.643.874-.787 1.999-.417 3.254.049.165-.011.343-.147.442l-5.06 3.667c-.748-.343-1.657-.319-2.437.132-2.811 1.625-5.653 2.359-9.216 2.382-3.06.019-5.576.783-7.691 2.337-2.361 1.733-3.944 4.235-4.456 7.043-.516 2.828.112 5.627 1.767 7.882.462.629.995 1.197 1.585 1.698H13.017C6.254 39.138 2.966 35.766 2.966 30.192c0-4.24 1.895-8.611 5.199-11.992 3.571-3.654 8.341-5.667 13.43-5.667 5.83 0 11.891 2.127 16.629 5.835a.88.88 0 0 0 1.234-.151.88.88 0 0 0-.15-1.234c-5.041-3.945-11.497-6.209-17.712-6.209-5.566 0-10.782 2.201-14.687 6.196-3.622 3.706-5.7 8.525-5.7 13.22 0 4.76 2.103 8.21 6.259 10.308H2.509A2.51 2.51 0 0 0 0 43.009c0 1.383 1.125 2.509 2.509 2.509h3.187a.12.12 0 0 1 .112.075l.558 1.366a4.26 4.26 0 0 0 3.957 2.658h39.354a4.26 4.26 0 0 0 3.957-2.658l.558-1.365c.019-.046.063-.076.112-.076h3.187c1.383 0 2.508-1.126 2.508-2.509a2.51 2.51 0 0 0-2.508-2.509h0zm-6.801-23.718a2.17 2.17 0 0 0 .799-2.363c-.146-.493-.239-1.19.147-1.714a1.23 1.23 0 0 1 .874-.51c.391-.043.798.09 1.117.367a1.52 1.52 0 0 1 .475 1.623c-.138.44-.056.925.221 1.299s.711.598 1.172.598h0a1.52 1.52 0 0 1 1.407.94c.168.387.174.816.015 1.176-.101.228-.313.531-.749.681-.615.211-1.253-.087-1.68-.373a2.17 2.17 0 0 0-2.495.056l-4.752 3.535-1.35-1.839 4.798-3.476zm-26.71 20.98c-1.367-1.862-1.884-4.179-1.455-6.526.432-2.365 1.77-4.476 3.767-5.942 1.806-1.327 3.986-1.979 6.662-1.996 3.886-.025 6.996-.832 10.085-2.618.34-.196.742-.167.998.054a.73.73 0 0 1 .108.116l2.01 2.738c.028.038.053.08.074.127.141.316.048.712-.243.979-2.629 2.412-4.331 5.138-5.517 8.838-.818 2.549-2.093 4.433-3.9 5.759-.674.495-1.408.902-2.184 1.21H27.48c-1.403-.583-2.61-1.527-3.499-2.738h0zm33.511 5.998H18.744a.88.88 0 0 0-.879.879.88.88 0 0 0 .879.879h33.581l-.317.776a2.51 2.51 0 0 1-2.33 1.565H10.323a2.51 2.51 0 0 1-2.33-1.565l-.317-.776h6.979a.88.88 0 0 0 .879-.879.88.88 0 0 0-.879-.879H2.509a.75.75 0 1 1 0-1.502h54.983a.75.75 0 1 1 0 1.502h0z"
+                        fill="#ff9d2d" />
+                    </g>
+                    <defs>
+                      <clipPath id="A">
+                        <path fill="#fff" d="M0 0h60v60H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+
+                <h3 class="h3 card-title">Chicken Masala</h3>
+
+                <p class="card-text">
+                  Food is any substance consumed to provide nutritional support for an organism.
+                </p>
+
+                <img src="./assets/images/promo-5.png" width="300" height="300" loading="lazy" alt="Chicken Masala"
+                  class="w-100 card-banner">
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section section-divider gray about" id="about">
+        <div class="container">
+
+          <div class="about-banner">
+            <img src="./assets/images/promo-2.png" width="500" height="100" loading="lazy" alt="Burger with Drinks"
+              class="w-100 about-img">
+
+            <img src="./assets/images/sale-shape-red.png" width="200" height="200" alt="get up to 50% off now"
+              class="abs-img scale-up-anim">
+          </div>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title">
+              Organic foods and  vegetables
+              <span class="span">in Town!</span>
+            </h2>
+
+            <p class="section-text">
+              Green Eats Kitchen is dedicated to inspiring and
+          empowering individuals to make healthier and more sustainable food choices through our diverse and innovative plant-based menu.
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Delicious & Healthy Foods</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Spacific Family And Kids Zone</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Music & Other Facilities</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Fastest Food Home Delivery</span>
+              </li>
+
+            </ul>
+
+            <button class="btn btn-hover">Order Now</button>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FOOD MENU
+      -->
+
+      <section class="section food-menu" id="food-menu">
+        <div class="container">
+
+          <p class="section-subtitle">Popular Dishes</p>
+
+          <h2 class="h2 section-title">
+            Our Delicious <span class="span">Foods</span>
+          </h2>
+
+          <p class="section-text">
+            Food is any substance consumed to provide nutritional support for an organism.
+          </p>
+
+          <ul class="fiter-list">
+
+            <li>
+              <button class="filter-btn  active">All</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Uzbek foods</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">US foods</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Drinks</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Vegetables</button>
+            </li>
+
+          </ul>
+
+          <ul class="food-menu-list">
+
+            <li>
+              <div class="food-menu-card">
+
+                <div class="card-banner">
+                  <img src="./assets/images/1.webp" width="300" height="300" loading="lazy"
+                  alt="Fried Chicken Unlimited" class="w-100">
+
+                  <div class="badge">-15%</div>
+
+                  <button class="btn food-menu-btn">Order Now</button>
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Asorti</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Salt and Pepper Mushrooms</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+
+                  <data class="price">69.990 sum</data>
+
+                  <del class="del" value="99.000">99.000 sum</del>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card">
+
+                <div class="card-banner">
+                  <img src="./assets/images/food-menu-2.png" width="300" height="300" loading="lazy"
+                    alt="Burger King Whopper" class="w-100">
+
+                  <div class="badge">-10%</div>
+
+                  <button class="btn food-menu-btn">Order Now</button>
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Noddles</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Healthy Breakfast</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+
+                  <data class="price" value="49.990 sum">49.990 sum</data>
+
+                  <del class="del">59.000 sum</del>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card">
+
+                <div class="card-banner">
+                  <img aria-colspan="white_image" src="./assets/images/salad.webp" width="900" height="900" loading="lazy"
+                  alt="White Castle Pizzas" class="w-100">
+
+                  <div class="badge">-25%</div>
+
+                  <button class="btn food-menu-btn">Order Now</button>
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Salad</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Caprese salad</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+
+                  <data class="price" value="89.000 sum">89.000 sum</data>
+
+                  <del class="del">109.000 sum</del>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card">
+
+                <div class="card-banner">
+                  <img src="./assets/images/food-menu-4.png" width="300" height="300" loading="lazy"
+                    alt="Bell Burrito Supreme" class="w-100">
+
+                  <div class="badge">-20%</div>
+
+                  <button class="btn food-menu-btn">Order Now</button>
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Fish</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Caprese salad</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+
+                  <data class="price" value="59.000 sum">59.000 sum</data>
+
+                  <del class="del">69.000 sum</del>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card">
+
+                <div class="card-banner">
+                  <img src="./assets/images/food-menu-5.png" width="300" height="300" loading="lazy"
+                    alt="Kung Pao Chicken BBQ" class="w-100">
+
+                  <div class="badge">-5%</div>
+
+                  <button class="btn food-menu-btn">Order Now</button>
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Nuggets</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Rosemary elegance meet</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+
+                  <data class="price" value="49.000 sum">49.000 sum</data>
+
+                  <del class="del">69.000 sum</del>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card">
+
+                <div class="card-banner">
+                  <img src="./assets/images/sticker.webp" width="300" height="300" loading="lazy"
+                  alt="Wendy's Chicken" class="w-100">
+
+                  <div class="badge">-15%</div>
+
+                  <button class="btn food-menu-btn">Order Now</button>
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Pizza</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Neopolitan pizza
+                </h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+
+                  <data class="price" value="49.000 sum"> 49.000 sum</data>
+
+                  <del class="del">69.000 sum</del>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="section section-divider white cta" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+
+          <div class="cta-content">
+
+            <h2 class="h2 section-title">
+              The Foodie Have Excellent Of
+              <span class="span">Quality Meals!</span>
+            </h2>
+
+            <p class="section-text">
+              Green Eats Kitchen is dedicated to inspiring and
+empowering individuals to make healthier and more sustainable food choices through our diverse and innovative plant-based menu.
+            </p>
+
+            <button class="btn btn-hover" id="order_btn">Order Now</button>
+          </div>
+
+          <figure class="cta-banner">
+            <img src="./assets/images/delicious-italian-food-clipart-cartoon-spaghetti-illustration-generative-ai-png.webp" width="700" height="637" loading="lazy" alt="Burger"
+              class="w-100 cta-img">
+
+            <img src="./assets/images/sale-shape.png" width="216" height="226" loading="lazy"
+              alt="get up to 50% off now" class="abs-img scale-up-anim">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #DELIVERY
+      -->
+
+      <section class="section section-divider gray delivery">
+        <div class="container">
+
+          <div class="delivery-content">
+
+            <h2 class="h2 section-title">
+              A Moments Of Delivered On <span class="span">Right Time</span> & Place
+            </h2>
+
+            <p class="section-text">
+              At Green Eats Kitchen, our commitment is to provide
+              delicious, healthy, and sustainable plant-based meals that nourish both the
+              body and the planet. We promise to use the freshest, locally sourced
+              ingredients to create flavorful dishes that cater to those seeking a more
+              plant-forward lifestyle.
+            </p>
+
+            <button class="btn btn-hover">Order Now</button>
+          </div>
+
+          <figure class="delivery-banner">
+            <img src="./assets/images/delivery-banner-bg.png" width="700" height="602" loading="lazy" alt="clouds"
+              class="w-100">
+
+            <img src="./assets/images/delivery-boy.svg" width="1000" height="880" loading="lazy" alt="delivery boy"
+              class="w-100 delivery-img" data-delivery-boy>
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TESTIMONIALS
+      -->
+
+      <section class="section section-divider white testi">
+        <div class="container">
+
+          <p class="section-subtitle">Testimonials</p>
+
+          <h2 class="h2 section-title">
+            Our Customers <span class="span">Reviews</span>
+          </h2>
+
+          <p class="section-text">
+            Food is any substance consumed to provide nutritional
+            support for an organism.
+          </p>
+
+          <ul class="testi-list has-scrollbar">
+
+            <li class="testi-item">
+              <div class="testi-card">
+
+                <div class="profile-wrapper">
+
+                  <figure class="avatar">
+                    <img src="./assets/images/avatar-1.jpg" width="80" height="80" loading="lazy" alt="Robert William">
+                  </figure>
+
+                  <div>
+                    <h3 class="h4 testi-name">Robert William</h3>
+
+                    <p class="testi-title">CEO Kingfisher</p>
+                  </div>
+
+                </div>
+
+                <blockquote class="testi-text">
+                  "I would be lost without restaurant. I would like to personally thank you for your outstanding
+                  product."
+                </blockquote>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testi-item">
+              <div class="testi-card">
+
+                <div class="profile-wrapper">
+
+                  <figure class="avatar">
+                    <img src="./assets/images/avatar-2.jpg" width="80" height="80" loading="lazy" alt="Thomas Josef">
+                  </figure>
+
+                  <div>
+                    <h3 class="h4 testi-name">Thomas Josef</h3>
+
+                    <p class="testi-title">CEO Getforce</p>
+                  </div>
+
+                </div>
+
+                <blockquote class="testi-text">
+                  "I would be lost without restaurant. I would like to personally thank you for your outstanding
+                  product."
+                </blockquote>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testi-item">
+              <div class="testi-card">
+
+                <div class="profile-wrapper">
+
+                  <figure class="avatar">
+                    <img src="./assets/images/avatar-3.jpg" width="80" height="80" loading="lazy" alt="Charles Richard">
+                  </figure>
+
+                  <div>
+                    <h3 class="h4 testi-name">Charles Richard</h3>
+
+                    <p class="testi-title">CEO Angela</p>
+                  </div>
+
+                </div>
+
+                <blockquote class="testi-text">
+                  "I would be lost without restaurant. I would like to personally thank you for your outstanding
+                  product."
+                </blockquote>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+
+      <!-- 
+        - #BANNER
+      -->
+
+      <section class="section section-divider gray banner">
+        <div class="container">
+
+          <ul class="banner-list">
+
+            <li class="banner-item banner-lg">
+              <div class="banner-card">
+
+                <img src="./assets/images/banner-1.jpg" width="550" height="450" loading="lazy"
+                  alt="Discount For Delicious Tasty Burgers!" class="banner-img">
+
+                <div class="banner-item-content">
+                  <p class="banner-subtitle">50% Off Now!</p>
+
+                  <h3 class="banner-title">Discount For Delicious Tasty Pasta!</h3>
+
+                  <p class="banner-text">Sale off 50% only this week</p>
+
+                  <button class="btn">Order Now</button>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="banner-item banner-sm">
+              <div class="banner-card">
+
+                <img src="./assets/images/Modern-Tuna-Casserole_EXPS_THFM19_228112_B09_27_9b.jpg" width="550" height="465" loading="lazy" alt="Delicious Meals"
+                  class="banner-img">
+
+                <div class="banner-item-content">
+                  <h3 class="banner-title">Delicious Melas</h3>
+
+                  <p class="banner-text">50% off Now</p>
+
+                  <button class="btn">Order Now</button>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="banner-item banner-sm">
+              <div class="banner-card">
+
+                <img src="./assets/images/creamy-kale-pasta-641e1bb1968ae.jpg" width="550" height="465" loading="lazy" alt="American Burgers"
+                  class="banner-img">
+
+                <div class="banner-item-content">
+                  <h3 class="banner-title">American Sallet</h3>
+
+                  <p class="banner-text">50% off Now</p>
+
+                  <button class="btn">Order Now</button>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="banner-item banner-md">
+              <div class="banner-card">
+
+                <img src="./assets/images/chicken-and-green-beans-recipe4.jpg" width="550" height="220" loading="lazy" alt="Tasty Buzzed Pizza"
+                  class="banner-img">
+
+                <div class="banner-item-content">
+                  <h3 class="banner-title">Tasty Healthy Checken</h3>
+
+                  <p class="banner-text">Sale off 50% only this week</p>
+
+                  <button class="btn">Order Now</button>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section section-divider white blog" id="blog">
+        <div class="container">
+
+          <p class="section-subtitle">Latest Blog Posts</p>
+
+          <h2 class="h2 section-title">
+            This Is All About <span class="span">Foods</span>
+          </h2>
+
+          <p class="section-text">
+            Food is any substance consumed to provide nutritional support for an organism.
+          </p>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner">
+                  <img src="./assets/images/blog-1.jpg" width="600" height="390" loading="lazy"
+                    alt="What Do You Think About Health Meal Recipes?" class="w-100">
+
+                  <div class="badge">Vegetables</div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="card-meta-wrapper">
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="calendar-outline"></ion-icon>
+
+                      <time class="meta-info" datetime="2022-01-01">Jan 01 2022</time>
+                    </a>
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="person-outline"></ion-icon>
+
+                      <p class="meta-info">Jonathan Smith</p>
+                    </a>
+
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">What Do You Think About Cheese Pizza Recipes?</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Financial experts support or help you to to find out which way you can raise your funds more...
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner">
+                  <img src="./assets/images/Sesame-salmon-purple-sprouting-broccoli-sweet-potato-mash-02-8062a36.jpg" width="600" height="390" loading="lazy"
+                    alt="Making Chicken Strips With New Delicious Ingridents." class="w-100">
+
+                  <div class="badge">Meals</div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="card-meta-wrapper">
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="calendar-outline"></ion-icon>
+
+                      <time class="meta-info" datetime="2022-01-01">Jan 01 2022</time>
+                    </a>
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="person-outline"></ion-icon>
+
+                      <p class="meta-info">Jonathan Smith</p>
+                    </a>
+
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Making Chicken Strips With New Delicious Ingridents.</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Financial experts support or help you to to find out which way you can raise your funds more...
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+                
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner">
+                  <img src="./assets/images/blog-3.jpg" width="600" height="390" loading="lazy"
+                    alt="Innovative Hot Chessyraw Pasta Make Creator Fact." class="w-100">
+
+                  <div class="badge">Chicken</div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="card-meta-wrapper">
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="calendar-outline"></ion-icon>
+
+                      <time class="meta-info" datetime="2022-01-01">Jan 01 2022</time>
+                    </a>
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="person-outline"></ion-icon>
+
+                      <p class="meta-info">Jonathan Smith</p>
+                    </a>
+
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Innovative Hot Chessyraw Pasta Make Creator Fact.</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Financial experts support or help you to to find out which way you can raise your funds more...
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top" style="background-image: url('./assets/images/footer-illustration.png')">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="" class="logo">Foodie<span class="span">.</span></a>
+
+          <p class="footer-text">
+            Financial experts support or help you to to find out which way you can raise your funds more.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://www.instagram.com/green_eatskitchen?igsh=ZnQxYjl5NHFxYmJj&utm_source=qr"  target="_blank" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/green_eatskitchen?igsh=ZnQxYjl5NHFxYmJj&utm_source=qr" target="_blank" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/green_eatskitchen?igsh=ZnQxYjl5NHFxYmJj&utm_source=qr" target="_blank"  class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/green_eatskitchen?igsh=ZnQxYjl5NHFxYmJj&utm_source=qr" target="_blank" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Info</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">+998 91 079 14 09
+            </p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">mirzayevaaziza77@gmail.com</p>
+          </li>
+
+          <li>
+            <address class="footer-list-item">Tashkent, Uzbekistan</address>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Opening Hours</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">Monday-Friday: 08:00-22:00</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">Tuesday 4PM: Till Mid Night</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">Saturday: 10:00-16:00</p>
+          </li>
+
+        </ul>
+
+        <form action="" class="footer-form">
+
+          <p class="footer-list-title">Book a Table</p>
+
+          <div class="input-wrapper">
+
+            <input type="text" name="full_name" required placeholder="Your Name" aria-label="Your Name"
+              class="input-field">
+
+            <input type="email" name="email_address" required placeholder="Email" aria-label="Email"
+              class="input-field">
+
+          </div>
+
+          <div class="input-wrapper">
+
+            <select name="total_person" aria-label="Total person" class="input-field">
+              <option value="person">Person</option>
+              <option value="2 person">2 Person</option>
+              <option value="3 person">3 Person</option>
+              <option value="4 person">4 Person</option>
+              <option value="5 person">5 Person</option>
+            </select>
+
+            <input type="date" name="booking_date" aria-label="Reservation date" class="input-field">
+
+          </div>
+
+          <textarea name="message" required placeholder="Message" aria-label="Message" class="input-field"></textarea>
+
+          <button type="submit" class="btn">Book a Table</button>
+
+        </form>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright-text">
+          &copy; 2024 <a href="#" class="copyright-link">Aziza Mirzayeva</a> All Rights Reserved.
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
